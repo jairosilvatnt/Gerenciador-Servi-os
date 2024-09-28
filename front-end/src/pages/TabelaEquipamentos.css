@@ -1,0 +1,28 @@
+/* TabelaEquipamentos.css */
+
+.container-table {
+  max-width: 90%;
+  margin: 0 auto; /* Centraliza a tabela horizontalmente */
+  padding: 20px;
+}
+
+.custom-table {
+  width: 100%; /* Faz a tabela ocupar 100% da largura da div */
+  margin-top: 20px;
+}
+
+.custom-table th, .custom-table td {
+  padding: 20px; /* Aumenta o espaçamento entre as células */
+  text-align: center; /* Centraliza o texto nas células */
+  vertical-align: middle; /* Centraliza verticalmente o conteúdo */
+  font-size: 18px; /* Aumenta o tamanho do texto */
+}
+
+.custom-table thead {
+  background-color: #f8f9fa; /* Cor de fundo para o cabeçalho */
+  font-weight: bold;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f1f1f1; /* Cor ao passar o mouse nas linhas */
+}
