@@ -1,17 +1,29 @@
-
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function NavBar() {
   return (
-    <>
-      <head>
+    <nav>
+      <Container>
+        <Link to="/">
+          <img src="logo" alt="Aqui fica a logo" />
+        </Link>
         <ul>
-          <li>Home</li>
-          <li>Contato</li>
-          <li>Produtos</li>
-          <li>Serviços</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/agenciaList">Lista de ATs</Link>
+          </li>
+          <li>
+            <Link to="/cadastrarAgencia">Cadastro ATs</Link>
+          </li>
+          <li>
+            <Link to="/updateAgencia">Atualizar ATs</Link>
+          </li>
         </ul>
-      </head>
-    </>
-  );
+      </Container>
+    </nav>
+  )
 }
 
 export default NavBar;

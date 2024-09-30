@@ -1,6 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './TabelaEquipamentos.css';
 
 const AgenciList = () => {
@@ -38,7 +39,9 @@ useEffect(() => {
             agencias.map((agencia) => (
             <tr key={agencia.id}>
               {/* <td>{agencia.id}</td> */}
-              <td>{agencia.nome}</td>
+              <td>
+                <Link to={`/agencias/${agencia.id}`}>{agencia.nome}</Link>
+              </td>
               {/* <td>{agencia.endereco}</td> */}
               {/* <td>{agencia.telefone}</td> */}
             </tr>
